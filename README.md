@@ -11,7 +11,9 @@ Diversos livros sobre CSS: onde o primeiro são componentes do tipo botão, o se
 
 Cada livro é uma página nova onde será possível ver detalhes de todos os componentes daquele tipo.
 
-O desenvolvimento dos links (livros) e da estante de carrossel está sendo estruturado e pensado... Provavelemente o andamento da index e das subpáginas acontecerá simultâneamente.
+O desenvolvimento dos links (livros) e da estante de carrossel está sendo estruturado e pensado... Provavlemente o andamento da index e das subpáginas acontecerá simultâneamente.
 
 
 O CSS inicialmente está sendo criado sem padrão ou pré-processadores. O uso de um automatizador está sendo repensando.
+
+Link do ambiente: https://lypehim.github.io/Components/
