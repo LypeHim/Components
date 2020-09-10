@@ -1,6 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+section {
+    /* background: url();
+    background-size: cover; */
+    height: 100vh;
+    width: 100%;
+}
 
+section .leftBox {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    padding: 50px;
+    width: 50%;
+}
+
+section .leftBox .content {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 40px;
+    transition: .5s;    
+}
+
+section .leftBox .content:hover {
+    background: #e91e63;
+}
+
+section .leftBox .content h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section .events {
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 50%;
+}
+
+section .events ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+section .events ul li {
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    list-style: none;
+    margin: 15px 0;
+}
+
+section .events ul li .time {
+    background: #262626;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    padding: 20px; 
+    position: relative;
+    text-align: center;
+    transition: .5s;
+    width: 30%;
+}
+
+section .events ul li:hover .time { 
+    background: #e91e63;
+}
+
+section .events ul li .time h2 {
+    color: #fff;
+    font-size: 60px;
+    left: 50%;
+    line-height: 45px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section .events ul li .time h2 span{
+    font-size: 30px;
+}
+
+section .events ul li .details {
+    background: #fff;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    padding: 20px;
+    width: 70%;
+
+}
+
+section .events ul li .details h3 { 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+section .events ul li .details p {
+    font-size: 16px;
+    margin: 10px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+section .events ul li .details a {
+    border: 2px solid #262626;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+section .events ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+}
