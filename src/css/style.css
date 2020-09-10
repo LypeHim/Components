@@ -52,6 +52,7 @@ section .events {
     height: 100%;
     position: relative;
     width: 50%;
+    
 }
 
 section .events ul {
@@ -72,7 +73,7 @@ section .events ul li {
 }
 
 section .events ul li .time {
-    background: #262626;
+    border-right: 2px solid #262626;
     box-sizing: border-box;
     float: left;
     height: 100%;
@@ -83,12 +84,18 @@ section .events ul li .time {
     width: 30%;
 }
 
+section .events ul li .time img { 
+    height: 70px;
+    margin-bottom: 10px;
+    width: 70px;
+}
+
 section .events ul li:hover .time { 
     background: #e91e63;
 }
 
 section .events ul li .time h2 {
-    color: #fff;
+    /* color: #fff; */
     font-size: 60px;
     left: 50%;
     line-height: 45px;
@@ -110,7 +117,6 @@ section .events ul li .details {
     height: 100%;
     padding: 20px;
     width: 70%;
-
 }
 
 section .events ul li .details h3 { 
