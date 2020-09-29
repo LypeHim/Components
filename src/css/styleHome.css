@@ -20,7 +20,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 h1 {
     width: max-content;
 }
@@ -28,22 +27,19 @@ h1 {
 section {
     /* background: url();
     background-size: cover; */
-    height: 100vh;
     width: 100%;
 }
 
-section .leftBox {
-    box-sizing: border-box;
-    float: left;
-    height: 100%;
-    padding: 50px;
-    width: 50%;
+section .leftBox {    
+    height: 70%;
+    padding: 0;
+    width: 100%;
 }
 
 section .leftBox .content {
     background: rgba(0,0,0,.5);
     color: #fff;
-    padding: 40px;
+    padding: 10px;
     transition: .5s;    
 }
 
@@ -52,7 +48,8 @@ section .leftBox .content:hover {
 }
 
 section .leftBox .content h1 {
-    font-size: 50px;
+    display: inline;
+    font-size: 35px;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -66,18 +63,17 @@ section .leftBox .content p {
 section .events {
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
-    float: right;
     height: 100%;
+    overflow: auto;
     position: relative;
-    width: 50%;
-    
+    width: 100%;
 }
 
 section .events ul {
     box-sizing: border-box;
-    margin: 0;
-    padding: 40px;
-    top: 50%;
+    margin:0;
+    padding: 10px;
+    top: 100%;
     transform: translateY(-50%);
     position: absolute;
 }
@@ -87,7 +83,10 @@ section .events ul li {
     box-sizing: border-box;
     height: 200px;
     list-style: none;
-    margin: 15px 0;
+    margin-bottom: 15px;
+}
+section .events ul li:first-child {
+    margin-top: 0;
 }
 
 section .events ul li .time {
@@ -106,7 +105,7 @@ section .events ul li .time img {
     height: 70px;
     margin-bottom: 10px;
     width: 70px;
-}
+}        
 
 section .events ul li:hover .time { 
     background: #e91e63;
@@ -125,13 +124,13 @@ section .events ul li .time h2 {
 }
 
 section .events ul li .time h2 span{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 section .events ul li .details {
     background: #fff;
     box-sizing: border-box;
-    float: left;
+    float: right;
     height: 100%;
     padding: 20px;
     width: 70%;
@@ -166,3 +165,64 @@ section .events ul li .details a:hover {
     background: #e91e63;
     color: #fff;
 }
+
+@media screen and (min-width: 768px) {    
+    section {
+        height: 100vh;
+    }
+
+    section .leftBox {
+        box-sizing: border-box;
+        float: left;
+        height: 100%;
+        padding: 50px;
+        width: 50%;
+    } 
+
+    section .leftBox .content {
+        padding: 40px;
+    }
+
+    section .leftBox .content h1 { 
+        font-size: 50px;
+    }
+
+    section .events {
+        float: right;
+        width: 50%;
+    }    
+    section .events ul {
+        box-sizing: border-box;
+        margin: 20px 0 0;
+        padding: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    
+    section .events ul li {
+        background: #fff;
+        box-sizing: border-box;
+        height: 200px;
+        list-style: none;
+        margin: 15px 0;
+    }
+    
+    section .events ul li .time {
+        float: left;        
+        width: 30%;
+    }
+    
+    section .events ul li .time h2 {
+        left: 50%;
+    }
+    section .events ul li .time h2 span{
+        font-size: 30px;
+    }
+    
+    section .events ul li .details {
+        float: left;
+        width: 70%;
+    } 
+}
+
