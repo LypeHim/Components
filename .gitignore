@@ -106,3 +106,8 @@ dist
 
 #font awesome assets and files
 fontawesome-free-5.14.0-web/
+
+#sass
+.sass-cache
+*.sass-cache*
+**/sass/*.css
