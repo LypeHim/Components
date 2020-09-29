@@ -1,6 +1,31 @@
+:root {
+    /*Pattern colors 1*/
+    --pattern-one-first-color: #84754E;
+    --pattern-one-sec-color:    #012169;
+    --pattern-one-third-color:  #C99700;
+    --pattern-one-fourth-color: #19253A;
+    --pattern-one-fiveth-color: #111419;
+    --pattern-one-sixth-color:  #F9F3E4;
+}
+
+
+/* Templates baseados no pattern da hoegaarden */
+
+
 body {
     display: flex;
     justify-content: center;
 }
 
+h1 {
+    width: max-content;
+}
 
+
+/* Buttons */
+
+/* Close Buttons */
+
+/* Play Buttons */
+
+/* Enlarge Buttons */
