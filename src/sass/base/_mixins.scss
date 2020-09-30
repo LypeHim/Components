@@ -1,0 +1,18 @@
+
+//set the width and height of some element
+@mixin measureWH($wdt, $hgt) {
+    width: $wdt;
+    height: $hgt;
+}
+
+//media querys
+@mixin media-breakpoint-up($value) {
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}
+@mixin media-breakpoint-down($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}

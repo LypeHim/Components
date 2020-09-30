@@ -1,1 +1,9 @@
-body {background-color: red;}
+@import "base/elements";
+@import "base/functions";
+@import "base/helpers";
+@import "base/mixins";
+@import "base/placeholders";
+@import "base/typography";
+@import "base/variables";
+
+@import "layout/home";
