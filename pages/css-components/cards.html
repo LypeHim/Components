@@ -6,109 +6,7 @@
     <link rel="stylesheet" href="../../build/css/style.css">
     <link rel="stylesheet" href="../../fontawesome-free-5.14.0-web/css/all.css">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-width: 100vh;
-        }
-
-        .container {
-            position: relative;
-            display: flex;
-            width: 1100px;
-            height: 500px;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row !important;
-        }
-
-        @media screen and (min-width: 768px) { /*erro no mobile*/
-            .container {
-                flex-direction: column !important;
-            }
-        }
-
-        .container .card {
-            position: relative;
-            width: 300px;
-            cursor: pointer;
-        }
-        .container .card .name {
-            position: relative;
-            padding: 10px 0;
-            border: 2px solid #000;
-            text-align: center;
-            background: #fff;
-            z-index: 1;
-        }
-
-        .container .card .name h3 {
-            font-weight: 500;
-            font-size: 1.5em;
-        }
-
-        .container .card .details {
-            position: relative;
-            text-align: center;
-            top: -2px;
-            height: 0;
-            transition: 0.5s;
-            border: 2px solid #000;
-            margin-top: -2px;
-        }
-
-        .container .card:hover .details { 
-            height: 316px;
-            overflow: hidden;
-        }
-
-        .container .card .details .content {
-            position: relative;
-            padding: 40px 20px;
-            display: none;
-        }
-        .container .card:hover .details .content {
-            display: block;
-        }
-
-        .container .card .details .content h2 {
-            font-size: 3em;
-            font-weight: 500;
-        }
-
-        .container .card .details .content h2 span {
-            font-size: 0.4em;
-        }
-
-        .container .card .details .content h2 span a {
-            position: relative;
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            background: rgba(0,0,0,.9);
-            color: #fff;
-            text-decoration: none;
-        }
-        .container .card:nth-child(1) .name {
-            background: #d2fff2;
-        }
-        .container .card:nth-child(1) .details {
-            background: #f1fffb;
-        }
-        .container .card:nth-child(2) .name {
-            background: #fcffd2;
-        }
-        .container .card:nth-child(2) .details {
-            background: #ffffe2;
-        }
-        .container .card:nth-child(3) .name {
-            background: #fed2ff;
-        }
-        .container .card:nth-child(3) .details {
-            background: #ffeeff;
-        }
-
+        /**/
 
     </style>
 </head>
@@ -218,8 +116,9 @@
                             <a href="#">Try Now</a>
                         </div>
                     </div>
-                </div>
-                
+                </div>                
+            </div>
+            <div class="zigzag">
             </div>
         </section>
     </fieldset>
